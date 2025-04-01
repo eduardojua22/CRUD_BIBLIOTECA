@@ -96,8 +96,7 @@ Requisitos para desarrollo:
 
 📧 SOPORTE
 ------------
-Contacto: [tu-email@dominio.com]
-Licencia: MIT
+Contacto: ejuarezsanchez91@gmail.com
 
 📁 SOBRE MÍ
 ------------------
