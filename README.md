@@ -1,2 +1,100 @@
-# CRUD_BIBLIOTECA
-Es un crud con estructura MVC, leguaje HTML Y PHP.
+=============================================
+SISTEMA DE GESTIÓN BIBLIOTECARIA (MVC PHP)
+=============================================
+
+📂 ESTRUCTURA DEL PROYECTO
+----------------------------
+biblioteca_mvc/
+├── app/
+│   ├── controladores/
+│   │   ├── Libros.php       # Controlador principal
+│   │   └── UnLibro.php      # Controlador para vista individual
+│   ├── modelos/
+│   │   ├── LibrosModelo.php # Modelo para operaciones CRUD
+│   │   └── UnLibroModelo.php
+│   ├── vistas/
+│   │   ├── libros/
+│   │   │   ├── crear.php    # Vista de creación
+│   │   │   ├── editar.php   # Vista de edición
+│   │   │   └── LibrosVista.php # Vista principal
+│   │   └── unlibro/
+│   │       └── UnLibroVista.php
+│   ├── libs/                # Librerías core
+│   │   ├── Controlador.php  # Clase base
+│   │   └── MySQLdb.php      # Conexión DB
+│   └── inicio.php           # Bootstrap
+└── public/
+    ├── css/                 # Estilos
+    ├── js/                  # Scripts
+    ├── assets/              # Imágenes/fuentes
+    └── index.php            # Punto de entrada
+
+🚀 INSTALACIÓN
+------------------
+1. Clonar repositorio:
+   git clone [url_repositorio]
+   
+2. Configurar base de datos:
+   - Importar estructura SQL desde /database/biblioteca.sql
+   - Configurar credenciales en app/libs/MySQLdb.php
+
+3. Configurar rutas:
+   Editar app/libs/defineConstantes.php:
+   define('RUTA_APP', 'http://tu-dominio/biblioteca_mvc/public');
+
+4. Permisos:
+   chmod 755 -R app/cache/ (si existe)
+
+🛠️ DEPENDENCIAS
+------------------
+- PHP 7.4+ (con PDO MySQL)
+- MySQL 5.7+
+- Apache/Nginx con mod_rewrite
+- Bootstrap 5 (CDN)
+- FontAwesome 6 (CDN)
+
+🔧 FUNCIONALIDADES PRINCIPALES
+--------------------------------
+✔️ CRUD completo de libros
+✔️ Vista individual de libros
+✔️ Validación de formularios
+✔️ Confirmación para eliminación
+✔️ Diseño responsive
+✔️ Paginación (opcional)
+
+🌐 RUTAS PRINCIPALES
+-----------------------
+- /libros              # Listado
+- /libros/alta         # Formulario creación
+- /libros/modificar/id # Formulario edición
+- /libros/borrar/id    # Eliminar (POST)
+- /libro/id            # Vista individual
+
+⚙️ CONFIGURACIÓN DB
+----------------------
+Tabla 'libros' requiere:
+- id (INT PK AI)
+- titulo (VARCHAR 255)
+- autor (VARCHAR 255)
+- editorial (VARCHAR 255)
+- anio (INT)
+- created_at (TIMESTAMP)
+
+💻 DESARROLLO
+---------------
+Requisitos para desarrollo:
+1. XDebug para PHP
+2. Composer (autoloading)
+3. Git Flow para gestión
+
+📝 NOTAS ADICIONALES
+-----------------------
+- El sistema usa Bootstrap 5 mediante CDN
+- FontAwesome para iconos
+- Implementa patrón MVC personalizado
+- No requiere composer inicialmente
+
+📧 SOPORTE
+------------
+Contacto: [tu-email@dominio.com]
+Licencia: MIT
