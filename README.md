@@ -53,14 +53,14 @@ biblioteca_mvc/
 - Bootstrap 5 (CDN)
 - FontAwesome 6 (CDN)
 
-🔧 FUNCIONALIDADES PRINCIPALES
+🛠 FUNCIONALIDADES PRINCIPALES
 --------------------------------
-✔️ CRUD completo de libros
-✔️ Vista individual de libros
-✔️ Validación de formularios
-✔️ Confirmación para eliminación
-✔️ Diseño responsive
-✔️ Paginación (opcional)
+✅ CRUD completo de libros
+✅ Vista individual de libros
+✅ Validación de formularios
+✅ Confirmación para eliminación
+✅ Diseño responsive
+✅ Paginación (opcional)
 
 🌐 RUTAS PRINCIPALES
 -----------------------
@@ -98,3 +98,19 @@ Requisitos para desarrollo:
 ------------
 Contacto: [tu-email@dominio.com]
 Licencia: MIT
+
+📁 SOBRE MÍ
+------------------
+Hola, soy Eduardo (edu), desarrollador apasionado por el backend y la arquitectura de software. Actualmente, estoy profundizando en PHP y en la implementación de patrones de diseño como MVC. Este proyecto es un sistema de gestión bibliotecaria construido para mejorar mis habilidades en el desarrollo web y proporcionar una base estructurada para futuras aplicaciones.
+
+Si tienes alguna sugerencia, duda o simplemente quieres discutir sobre desarrollo, ¡no dudes en contactarme!
+
+📑 REFERENCIAS
+------------------
+- Documentación oficial de PHP: https://www.php.net/docs.php
+- MySQL: https://dev.mysql.com/doc/
+- Apache HTTP Server: https://httpd.apache.org/docs/
+- Bootstrap 5: https://getbootstrap.com/docs/5.0/
+- FontAwesome: https://fontawesome.com/docs/
+- Patrón MVC en PHP: https://www.phptherightway.com/pages/Design-Patterns.html
+
