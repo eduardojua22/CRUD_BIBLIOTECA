@@ -1,33 +1,65 @@
-=============================================
 SISTEMA DE GESTIÓN BIBLIOTECARIA (MVC PHP)
-=============================================
+============================================
+
 
 📂 ESTRUCTURA DEL PROYECTO
-----------------------------
+
+<a id='configuracion'></a>
+## RUTAS PRINCIPALES
+
+```
+ /libros              # Listado
+- /libros/alta         # Formulario creación
+- /libros/modificar/id # Formulario edición
+- /libros/borrar/id    # Eliminar (POST)
+- /libro/id            # Vista individual
+```
+<a id='Estructura'></a>
+
+## 🗂 Estructura del Proyecto
+
+```
 biblioteca_mvc/
-├── app/
-│   ├── controladores/
-│   │   ├── Libros.php       # Controlador principal
-│   │   └── UnLibro.php      # Controlador para vista individual
-│   ├── modelos/
-│   │   ├── LibrosModelo.php # Modelo para operaciones CRUD
-│   │   └── UnLibroModelo.php
-│   ├── vistas/
-│   │   ├── libros/
-│   │   │   ├── crear.php    # Vista de creación
-│   │   │   ├── editar.php   # Vista de edición
-│   │   │   └── LibrosVista.php # Vista principal
-│   │   └── unlibro/
-│   │       └── UnLibroVista.php
-│   ├── libs/                # Librerías core
-│   │   ├── Controlador.php  # Clase base
-│   │   └── MySQLdb.php      # Conexión DB
-│   └── inicio.php           # Bootstrap
-└── public/
-    ├── css/                 # Estilos
-    ├── js/                  # Scripts
-    ├── assets/              # Imágenes/fuentes
+-├── app/
+-│   ├── controladores/
+-│   │   ├── Libros.php       # Controlador principal
+-│   │   └── UnLibro.php      # Controlador para vista individual
+-│   ├── modelos/
+-│   │   ├── LibrosModelo.php # Modelo para operaciones CRUD
+-│   │   └── UnLibroModelo.php
+-│   ├── vistas/
+-│   │   ├── libros/
+-│   │   │   ├── crear.php    # Vista de creación
+-│   │   │   ├── editar.php   # Vista de edición
+-│   │   │   └── LibrosVista.php # Vista principal
+-│   │   └── unlibro/
+-│   │       └── UnLibroVista.php
+-│   ├── libs/                # Librerías core
+-│   │   ├── Controlador.php  # Clase base
+-│   │   └── MySQLdb.php      # Conexión DB
+-│   └── inicio.php           # Bootstrap
+-└── public/
+    -├── css/                 # Estilos
+    -├── js/                  # Scripts
+    -├── assets/              # Imágenes/fuentes
     └── index.php            # Punto de entrada
+
+```
+
+
+` Configuración de Base de Datos `
+```
+
+<a id='Conexion'></a>
+
+` # Conexión a Base de Datos en PHP con PDO `
+
+- Este documento explica el funcionamiento de la clase `BasedeDatos` que gestiona la conexión a MySQL utilizando PDO.
+<a id='Clase'></a>
+
+` ## 🛠 Clase BasedeDatos`
+
+```
 
 🚀 INSTALACIÓN
 ------------------
@@ -112,4 +144,6 @@ Si tienes alguna sugerencia, duda o simplemente quieres discutir sobre desarroll
 - Bootstrap 5: https://getbootstrap.com/docs/5.0/
 - FontAwesome: https://fontawesome.com/docs/
 - Patrón MVC en PHP: https://www.phptherightway.com/pages/Design-Patterns.html
+
+
 
